@@ -88,7 +88,7 @@ describe('Student', function() {
 			expect(joeDirt.knowledge).to.equal(30)
 		})
 
-		it(", for hard mode, should live on the Student prototype. This will save memory, as the multiple copies of the same function won't be assigned to every individual Student instance.", function() {
+		it(", for hard mode, should live on the Student prototype. This will save memory, as multiple copies of the same function won't be assigned to every individual Student instance.", function() {
 			var joeDirt = new Student('agriculture')
 			expect(joeDirt.hasOwnProperty('learn')).to.equal(false)
 		})
@@ -137,7 +137,7 @@ describe('Validator', function() {
 		expect(new Validator().isEmail).to.be.a('function')
 	})
 	describe('.isEmail', function() {
-		it('should take as input a string and return true if that string is a valid email address, false otherwise.', function() {
+		it('should take as input a string and return true if that string is a valid email address, otherwise false.', function() {
 			var theValidator = new Validator()
 			expect(theValidator.isEmail("name@theironyard.com")).to.equal(true)
 			expect(theValidator.isEmail("name-at-theironyard.com")).to.equal(false)	
