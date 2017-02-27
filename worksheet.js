@@ -21,7 +21,7 @@
 // -- ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ - Your Answer - ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ -- //
 
 var Foo = function(inputFirstName) {
- 	this.firstName = inputFirstName
+    this.firstName = inputFirstName
     this.lastName = 'bar'
 }
 
@@ -43,7 +43,7 @@ var foo = new Foo('kenji')
 // -- ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ - Your Answer - ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ -- //
 
 var Dog = function() {
- 	this.philosophy = 'life is ruff'   
+    this.philosophy = 'life is ruff'
 }
 
 var ralph = new Dog()
@@ -64,8 +64,8 @@ var ralph = new Dog()
 // -- ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ - Your Answer - ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ -- //
 
 var Cat = function() {
- 	this.greet = function() {
-     return 'meow'   
+    this.greet = function() {
+        return 'meow'
     }
 }
 
@@ -91,12 +91,12 @@ var Cat = function() {
 
 var Student = function(inputExpertise) {
     this.expertise = inputExpertise
- 	this.knowledge = 0
+    this.knowledge = 0
 }
 
 Student.prototype.learn = function(inputLearn) {
     this.knowledge = this.knowledge + inputLearn
-    }
+}
 
 var joeDirt = new Student('sushi')
 
@@ -106,38 +106,38 @@ var joeDirt = new Student('sushi')
 
 
 
-	 //  _   _   ___  ____________  ___  ______________ _____ 
-	 // | | | | / _ \ | ___ \  _  \ |  \/  |  _  |  _  \  ___|
-	 // | |_| |/ /_\ \| |_/ / | | | | .  . | | | | | | | |__  
-	 // |  _  ||  _  ||    /| | | | | |\/| | | | | | | |  __| 
-	 // | | | || | | || |\ \| |/ /  | |  | \ \_/ / |/ /| |___ 
-	 // \_| |_/\_| |_/\_| \_|___/   \_|  |_/\___/|___/ \____/ 
-	 //                                                  
-	 //		             (
-	 //		        .            )        )
-	 //		                 (  (|              .
-	 //		             )   )\/ ( ( (
-	 //		     *  (   ((  /     ))\))  (  )    )
-	 //		   (     \   )\(          |  ))( )  (|
-	 //		   >)     ))/   |          )/  \((  ) \
-	 //		   (     (      .        -.     V )/   )(    (
-	 //		    \   /     .   \            .       \))   ))
-	 //		      )(      (  | |   )            .    (  /
-	 //		     )(    ,'))     \ /          \( `.    )
-	 //		     (\>  ,'/__      ))            __`.  /
-	 //		    ( \   | /  ___   ( \/     ___   \ | ( (
-	 //		     \.)  |/  /   \__      __/   \   \|  ))
-	 //		    .  \. |>  \ HARD | __ | MODE /   <|  /
-	 //		         )/    \____/ :..: \____/     \ <
-	 //		  )   \ (|__  .      / ;: \          __| )  (
-	 //		 ((    )\)  ~--_     --  --      _--~    /  ))
-	 //		  \    (    |  ||               ||  |   (  /
-	 //		        \.  |  ||_             _||  |  /
-	 //		          > :  |  ~V+-I_I_I-+V~  |  : (.
-	 //		         (  \:  T\   _     _   /T  : ./
-	 //		          \  :    T^T T-+-T T^T    ;<
-	 //		           \..`_       -+-       _'  )
-	 //		 )            . `--=.._____..=--'. ./        
+//  _   _   ___  ____________  ___  ______________ _____ 
+// | | | | / _ \ | ___ \  _  \ |  \/  |  _  |  _  \  ___|
+// | |_| |/ /_\ \| |_/ / | | | | .  . | | | | | | | |__  
+// |  _  ||  _  ||    /| | | | | |\/| | | | | | | |  __| 
+// | | | || | | || |\ \| |/ /  | |  | \ \_/ / |/ /| |___ 
+// \_| |_/\_| |_/\_| \_|___/   \_|  |_/\___/|___/ \____/ 
+//                                                  
+//		             (
+//		        .            )        )
+//		                 (  (|              .
+//		             )   )\/ ( ( (
+//		     *  (   ((  /     ))\))  (  )    )
+//		   (     \   )\(          |  ))( )  (|
+//		   >)     ))/   |          )/  \((  ) \
+//		   (     (      .        -.     V )/   )(    (
+//		    \   /     .   \            .       \))   ))
+//		      )(      (  | |   )            .    (  /
+//		     )(    ,'))     \ /          \( `.    )
+//		     (\>  ,'/__      ))            __`.  /
+//		    ( \   | /  ___   ( \/     ___   \ | ( (
+//		     \.)  |/  /   \__      __/   \   \|  ))
+//		    .  \. |>  \ HARD | __ | MODE /   <|  /
+//		         )/    \____/ :..: \____/     \ <
+//		  )   \ (|__  .      / ;: \          __| )  (
+//		 ((    )\)  ~--_     --  --      _--~    /  ))
+//		  \    (    |  ||               ||  |   (  /
+//		        \.  |  ||_             _||  |  /
+//		          > :  |  ~V+-I_I_I-+V~  |  : (.
+//		         (  \:  T\   _     _   /T  : ./
+//		          \  :    T^T T-+-T T^T    ;<
+//		           \..`_       -+-       _'  )
+//		 )            . `--=.._____..=--'. ./        
 
 
 
@@ -166,6 +166,19 @@ var joeDirt = new Student('sushi')
 
 // -- ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ - Your Answer - ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ -- //
 
+var Key = function() {
+
+}
+
+var Safe = function(secretData, keyInstance) {
+    var correctKey = new Key()
+    this.unlock = function(correctKey) {
+        if (correctKey === keyInstance) {
+            return secretData
+        }
+        return null
+    }
+}
 
 
 // -- ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ -- //
@@ -181,4 +194,11 @@ var joeDirt = new Student('sushi')
 
 // -- ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ - Your Answer - ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ -- //
 
+var Validator = function() {
 
+}
+
+Validator.prototype.isEmail = function(inputString) {
+    var checkEmail = /\S+@\S+\.\S+/;
+   return checkEmail.test(inputString);
+}
