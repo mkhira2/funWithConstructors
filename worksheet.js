@@ -6,17 +6,6 @@
 ////    / /__/ _ \/ _ \(_-</ __/ __/ // / __/ __/ _ \/ __(_-<    ////
 ////    \___/\___/_//_/___/\__/_/  \_,_/\__/\__/\___/_/ /___/    ////
 ////                                                             ////
-////    In the examples below make sure you name each            ////
-////    constructor differently as to not override eachother.    ////
-////    I need to be able to test them in gh-pages on the        ////
-////    console. Also make sure there are no javascript errors   ////
-////    and check your code in js hint. Finally make sure it     ////
-////    is formatted/indented correctly. Code is in place        ////
-////    that validates each answer. It will currently say:       ////
-////    `Assertion failed` for each question. Once you answer    ////
-////    the question correctly that will go away. Use this to    ////
-////    check your work                                          ////
-////                                                             ////
 ////                                                             ////
 /////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////
@@ -31,8 +20,6 @@
 
 // -- ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ - Your Answer - ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ -- //
 
-let Foo = function(){},
-	foo = new Foo()
 
 // -- ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ -- //
 // --------------------------------------------------------------- //
@@ -48,9 +35,6 @@ let Foo = function(){},
 
 // -- ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ - Your Answer - ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ -- //
 
-let Dog = function() {
-	this.philosophy = 'life is ruff'
-}
 
 // -- ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ -- //
 
@@ -66,11 +50,7 @@ let Dog = function() {
 
 // -- ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ - Your Answer - ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ -- //
 
-let Cat = function() {
-	this.greet = function() {
-		return 'meow'
-	}
-}
+
 // -- ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ -- //
 
 
@@ -86,49 +66,48 @@ let Cat = function() {
 // student should also have a `knowledge` attribute, which has a beginning
 // value of zero. Yet another property of a student object should be the 
 // `learn` method, which will take one input: the amount of knowledge the
-// student will gain. In short, make the following assertions pass:
+// student will gain. 
 
 // -- ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ - Your Answer - ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ -- //
 
-let Student = function(aOfE) {
-	this.expertise = aOfE
-	this.knowledge = 0
-}
 
-Student.prototype.learn = function(amt) {
-	this.knowledge += amt
-}
-
-console.log(new Student().hasOwnProperty('learn'))
 // -- ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ -- //
 
 
 
-		 //             (
-		 //        .            )        )
-		 //                 (  (|              .
-		 //             )   )\/ ( ( (
-		 //     *  (   ((  /     ))\))  (  )    )
-		 //   (     \   )\(          |  ))( )  (|
-		 //   >)     ))/   |          )/  \((  ) \
-		 //   (     (      .        -.     V )/   )(    (
-		 //    \   /     .   \            .       \))   ))
-		 //      )(      (  | |   )            .    (  /
-		 //     )(    ,'))     \ /          \( `.    )
-		 //     (\>  ,'/__      ))            __`.  /
-		 //    ( \   | /  ___   ( \/     ___   \ | ( (
-		 //     \.)  |/  /   \__      __/   \   \|  ))
-		 //    .  \. |>  \ HARD | __ | MODE /   <|  /
-		 //         )/    \____/ :..: \____/     \ <
-		 //  )   \ (|__  .      / ;: \          __| )  (
-		 // ((    )\)  ~--_     --  --      _--~    /  ))
-		 //  \    (    |  ||               ||  |   (  /
-		 //        \.  |  ||_             _||  |  /
-		 //          > :  |  ~V+-I_I_I-+V~  |  : (.
-		 //         (  \:  T\   _     _   /T  : ./
-		 //          \  :    T^T T-+-T T^T    ;<
-		 //           \..`_       -+-       _'  )
-		 // )            . `--=.._____..=--'. ./        
+
+	 //  _   _   ___  ____________  ___  ______________ _____ 
+	 // | | | | / _ \ | ___ \  _  \ |  \/  |  _  |  _  \  ___|
+	 // | |_| |/ /_\ \| |_/ / | | | | .  . | | | | | | | |__  
+	 // |  _  ||  _  ||    /| | | | | |\/| | | | | | | |  __| 
+	 // | | | || | | || |\ \| |/ /  | |  | \ \_/ / |/ /| |___ 
+	 // \_| |_/\_| |_/\_| \_|___/   \_|  |_/\___/|___/ \____/ 
+	 //                                                  
+	 //		             (
+	 //		        .            )        )
+	 //		                 (  (|              .
+	 //		             )   )\/ ( ( (
+	 //		     *  (   ((  /     ))\))  (  )    )
+	 //		   (     \   )\(          |  ))( )  (|
+	 //		   >)     ))/   |          )/  \((  ) \
+	 //		   (     (      .        -.     V )/   )(    (
+	 //		    \   /     .   \            .       \))   ))
+	 //		      )(      (  | |   )            .    (  /
+	 //		     )(    ,'))     \ /          \( `.    )
+	 //		     (\>  ,'/__      ))            __`.  /
+	 //		    ( \   | /  ___   ( \/     ___   \ | ( (
+	 //		     \.)  |/  /   \__      __/   \   \|  ))
+	 //		    .  \. |>  \ HARD | __ | MODE /   <|  /
+	 //		         )/    \____/ :..: \____/     \ <
+	 //		  )   \ (|__  .      / ;: \          __| )  (
+	 //		 ((    )\)  ~--_     --  --      _--~    /  ))
+	 //		  \    (    |  ||               ||  |   (  /
+	 //		        \.  |  ||_             _||  |  /
+	 //		          > :  |  ~V+-I_I_I-+V~  |  : (.
+	 //		         (  \:  T\   _     _   /T  : ./
+	 //		          \  :    T^T T-+-T T^T    ;<
+	 //		           \..`_       -+-       _'  )
+	 //		 )            . `--=.._____..=--'. ./        
 
 
 
@@ -157,14 +136,6 @@ console.log(new Student().hasOwnProperty('learn'))
 
 // -- ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ - Your Answer - ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ -- //
 
-let Key = function() {
-}
-
-let Safe = function(secret,key) {
-	this.unlock = function(testKey) {
-		return testKey === key ? secret : null
-	}
-}
 
 
 // -- ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ -- //
@@ -180,11 +151,4 @@ let Safe = function(secret,key) {
 
 // -- ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ - Your Answer - ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ -- //
 
-let Validator = function() {
-}
 
-Validator.prototype = {
-	isEmail: function(str) {
-		return str.match(/\w+?@\w+?\.\w+/) ? true : false
-	}
-}
